@@ -1,0 +1,31 @@
+/*@scrollPosition (min: 100px, max: 200px + 100vh) {
+	.container .item {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}*/
+
+.container .item {
+	width: 100%;
+	margin-top: 50px;
+	transform: translateX(-100%);
+	border: 2px solid blue;
+	background: green;
+	opacity: 0;
+	transition: all 1s ease-in-out;
+}
+
+.container:in-view .item {
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+.container:first-child .item:in-view {
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+.container {
+	overflow: hidden;
+	margin-top: 500px;
+}
