@@ -21,7 +21,7 @@
 ## As a Queryselector:
 #### Example:
 ```css
-@screenPosition (minX: 100px, maxX: 200px + 100vh) {
+@screenPosition (minX: 100px, maxX: 300px) {
 	.item {
 		transform: translateX(0%);
 	}
